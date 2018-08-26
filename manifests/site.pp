@@ -4,3 +4,7 @@ node /agent/ {
     include ntp
     include apt
 }
+
+node /agent/ {
+    include role::lamp
+}
