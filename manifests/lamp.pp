@@ -3,4 +3,7 @@ class profile::lamp{
     include mysql::server
     include php
  }
-   
+   class role::lamp {
+    include profile::baseconfig
+    include profile::lamp
+}
